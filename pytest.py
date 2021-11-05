@@ -7,7 +7,7 @@ import unittest
 
 class RandomTest(unittest.TestCase):
     """Test le fonctionnement de certaines fonctions du module 'random'."""
-    
+
     def testChoice(self):
         """Test le fonctionnement de la fonction 'random.choice'."""
         liste = list(range(10))
@@ -69,4 +69,4 @@ class RandomTest(unittest.TestCase):
             random.sample(liste, 20)
 
 
-unittest.main()
+

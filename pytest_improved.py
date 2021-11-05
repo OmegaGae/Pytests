@@ -26,8 +26,9 @@ class RandomTest(unittest.TestCase):
         extrait = random.sample(self.liste, 5)
         for element in extrait:
             self.assertIn(element, self.liste)
-
+        #on vérifie le comportement de sample en cas d'erreur 
+        #on a donc reproduit le comportement normal en cas d'erreur 
+        # de cette méthode
         with self.assertRaises(ValueError):
             random.sample(self.liste, 20)
 
-unittest.main()
